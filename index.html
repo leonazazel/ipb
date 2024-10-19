@@ -1,0 +1,106 @@
+<html>
+<meta charset='UTF-8' />
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5'name='viewport' />
+<meta content='IE=edge' http-equiv='X-UA-Compatible' />
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+<script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+<link href="https://htmlku.com/dariku/style.css" rel="stylesheet" type="text/css" />
+
+<!--<head>
+  <title>Pesan Dariku</title>
+</head>-->
+
+<body>
+
+  <div id="bodyblur">
+    <!-- Wallpaper / Background --><img
+      src="https://cdn.discordapp.com/attachments/937612324531998724/1297318525525823609/Pas_foto_dokter.jpg?ex=67157d87&is=67142c07&hm=e490d537530a8ff81c843167025db5dce06599f83a374d39c762ab4fd3343af6&"
+      id="wallpaper" />
+  </div>
+
+  <div class="kumpulanstiker">
+    <!-- Stiker untuk Konten -->
+    <img src="https://media.tenor.com/HKIpSkjda9kAAAAi/tkthao219-bubududu.gif" id="fotoakhir1" />
+    <img src="https://media.tenor.com/qCLVArJBlaEAAAAi/tkthao219-bubududu.gif" id="fotoakhir2" />
+    <img src="https://media.tenor.com/WlYzGTHkCxUAAAAi/tkthao219-bubududu.gif" id="fotoakhir3" />
+    <img src="https://media.tenor.com/LOkL6MV5vsgAAAAj/tkthao219-bubududu.gif" id="fotoakhir4" />
+    <img src="https://media.tenor.com/fK1ZHI9dY6AAAAAj/bubududu-panda.gif" id="fotoakhir5" />
+  </div>
+
+  <div id='Content'>
+
+    <div id="suratin" onClick="memulai();audio.play();">
+      <!-- Surat --><img src="https://rayyscoding.github.io/envelope.png" />
+    </div>
+    <p id="ket">Coba Klik Suratnya!<br> Tapi sebelum klik suratnya, baca bismillah dulu &#128540;<br></p>
+    <div><!-- Foto Akhir --><img src="https://i.ibb.co/z7N6gKp/tos.gif" id="fotoakhir" /></div>
+    <div>
+      <blockquote id='bq'>
+        <p id="kalimat"></p>
+        <p id="kalimatc"></p>
+      </blockquote>
+    </div>
+
+    <!-- Tombol Kirim Pesan -->
+    <div id="Tombol">
+      <a onClick="sjawab()">
+        <b>💌 Balas</b>
+      </a>
+    </div>
+
+  </div>
+
+  <!--<div class='sticky-ad' id='sticky-ad'>
+    <div class='adB'><a rel="dofollow" href='https://bit.ly/htmlfeeldream'>Lihat Script HTML Lainnya di Sini!</a></div>
+    <button aria-label='Close this ad' class='sticky-ad-close-button' onclick='hilangkan();' /
+  </div>>-->
+
+  <script src="https://htmlku.com/dariku/script.js"></script>
+
+  <!-- Ganti Kata², Foto, Lagu di bawah ya
+1) Upload foto ke https://postimages.org
+     buat dapetin linknya
+2) Ganti Lagu Upload ke replit.com
+     atau bisa juga ke mailboxdrive.com -->
+
+  <script type="text/javascript">
+    async function jawab() {await swals.fire('Kirim pesan ke WhatsApp aku, ya!'); window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;}
+
+    async function pertama() {
+      audio = new Audio('https://b.top4top.io/m_3214w1gr31.mp3'); setTimeout(showDiv, 750);
+    } pertama();
+
+
+    async function pesan() {
+      await swalst.fire({
+        title: 'Selamat Pagi Intan Putri Berlianti &#128513;',
+        imageUrl: '' + fotoakhir1.src,
+      });
+      await swalst.fire({
+        title: 'Semangat Buat Hari Ini &#128526;',
+        imageUrl: '' + fotoakhir2.src,
+      });
+      await swalst.fire({
+        title: 'Tetap Jaga Kesehatan yaa &#128521;',
+        imageUrl: '' + fotoakhir3.src,
+      });
+      await swalst.fire({
+        title: 'Jangan lupa untuk sholat &#128543;',
+        imageUrl: '' + fotoakhir4.src,
+      });
+      await swalst.fire({
+        title: 'Dan Jangan Telat Makan &#128548;',
+        imageUrl: '' + fotoakhir5.src,
+      });
+
+      katangetik = "<b>Terakhir, aku cuma mau bilang:</b><br><br>Apapun yang kamu lakukan dihari ini<br>semoga penuh dengan kebahagiaan<br>dan keberuntungan untukmu.<br><br>Hati-hati dijalan<br>Kalau capek nanti istirahat, jan dipaksa <br>Gak boleh ngebut, bawa sangu makan biar nanti kalau laper bisa langsung makan<br>setidaknya supaya bisa menghemat dan higienis.<br><br>Oh ya, satu lagi<br>Jangan lupa bersyukur untuk hari ini<br>Maaf kalau hanya ini yang masih bisa ku kasih<br>semoga kamu suka &#129303;";
+      katangetik2 = "<i>Have Nice Day &#127801;</i>";
+
+      pesanwhatsapp = "Have Nice Day Too";
+      setTimeout(kpemb, 500);
+    }
+  </script>
+</body>
+
+</html>
